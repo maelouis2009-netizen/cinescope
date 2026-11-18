@@ -1,0 +1,16 @@
+{
+  "name": "cinescope-addon",
+  "version": "1.0.0",
+  "description": "CineScope - Addon Stremio/Nuvio français",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.10",
+    "axios": "^1.7.7"
+  }
+}
