@@ -264,7 +264,7 @@ builder.defineStreamHandler(async (args) => {
 // 6. DÉMARRAGE DU SERVEUR
 // ─────────────────────────────────────────────────────────────
 const iface = builder.getInterface();
-serveHTTP(iface, { port: config.port }).then(server => {
+serveHTTP(iface, { port: config.port, hostname: '0.0.0.0' }).then(server => {
     console.log(`✅ CineScope démarré sur : ${server.url}/manifest.json`);
     console.log(`👉 Colle cette URL dans Nuvio sur ta TV TCL.`);
 });
